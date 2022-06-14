@@ -67,15 +67,18 @@
   padding-top: 17px !important;
   padding-bottom: 0px !important;
 }
-.css-k008qs {
-  display: flex;
-}
+
 .css-19kzrtu {
   padding: 0px !important;
   padding-top: 18px !important;
 
 }
-
+@media only screen and (max-width: 768px) {
+  .css-k008qs {
+    display: flex;
+    justify-content: space-between !important;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .css-w8dmq8 {
