@@ -1,0 +1,212 @@
+.backpic1 {
+  width: 100%;
+  height: 100%;
+}
+hr:not([size]) {
+  height: 0px;
+}
+.shadow {
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+}
+.css-151dxxb {
+  background-color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  margin-top: 323px;
+  height: 100%;
+  overflow: auto;
+}
+.backpic {
+  width: 100%;
+  height: 100%;
+}
+.retweetName:hover {
+  text-decoration: underline;
+}
+.outline-home {
+  border-left: 1px solid;
+  border-left-color: #e5e5e5;
+}
+.left-half {
+  border-right: 1px solid;
+  border-right-color: #e5e5e5;
+  overflow: hidden;
+}
+.topTweets:hover {
+  background: #dfdfde;
+  border-radius: 50px;
+}
+.tweet:hover {
+  background: #f6f6f6;
+}
+.Trending:hover {
+  background: #f2f2f2;
+}
+.showMore:hover {
+  background: #f2f2f2;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+/* textarea */
+
+textarea {
+  writing-mode: horizontal-tb !important;
+  font-size: 15px;
+
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  -webkit-rtl-ordering: logical;
+  resize: auto;
+  cursor: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  column-count: initial !important;
+  margin: 0em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  padding: 2px;
+  padding-left: 10px;
+  resize: none;
+}
+textarea::placeholder {
+  font-size: 1.2em;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: none;
+}
+
+/* searchbar */
+/* From uiverse.io by @satyamchaudharydev */
+/* From uiverse.io by @satyamchaudharydev */
+/* this is a recreation of twitter search in css */
+.form {
+  --input-text-color: #000;
+  --input-bg-color: #eeeeee;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 27.5%;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+}
+
+.form {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.8em;
+  padding-inline: var(--inline-padding-of-input);
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  margin-right: 5%;
+  height: 50px;
+}
+
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.search,
+.close-btn {
+  position: absolute;
+}
+
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+  width: 25px;
+}
+
+.close-btn {
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color);
+}
+
+.input:focus ~ .fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+
+.input:focus ~ .search {
+  fill: var(--active-color);
+}
+
+.input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+.tweetmedias:hover {
+  background-color: #e8f6ef;
+  border-radius: 50px;
+}
+.tweetbutton {
+  height: 2.2em;
+  width: 5.5em;
+  border: none;
+  border-radius: 10em;
+  background: #016dd9;
+  font-size: 15px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 500;
+  margin-left: 20%;
+  margin-top: 0px;
+  font-weight: bold;
+}
