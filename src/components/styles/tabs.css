@@ -73,7 +73,7 @@
   padding-top: 18px !important;
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .css-k008qs {
     display: flex;
     justify-content: space-between !important;
