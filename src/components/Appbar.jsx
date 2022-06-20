@@ -9,11 +9,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Star from "./images/star.png";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import SwipeableTemporaryDrawer from "./MobileDrawer";
-
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import { styled } from "@mui/material/styles";
 import Skeleton from "@mui/material/Skeleton";
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props) {
   const [toggleDrawer, settoggleDrawer] = useState(false);
   const StyledBox = styled(Box)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "light" ? "#fff" : "grey[800]"
@@ -32,9 +32,10 @@ export default function ButtonAppBar() {
     <Box style={{ position: "absolute", width: "99.8%", zIndex: "1000" }}>
       <AppBar
         position="static"
-        style={{ background: "#fff", boxShadow: "none" }}
+        style={{ background: "#fff", boxShadow: "none", height: "52px"}}
       >
         <Toolbar>
+        
           <IconButton
             size="large"
             edge="start"
@@ -56,10 +57,10 @@ export default function ButtonAppBar() {
             sx={{ flexGrow: 1 }}
             style={{ color: "#000", fontSize: "20px" }}
           >
-            Home
+          {props.name}
           </Typography>
           <div style={{ padding: "1%" }} className="topTweets">
-            <img
+          {props.name === "Home"? <img
               src={Star}
               style={{
                 height: "32px",
@@ -72,7 +73,8 @@ export default function ButtonAppBar() {
               onClick={() => {
                 settoggleDrawer(true);
               }}
-            />
+            /> : <SettingsOutlinedIcon style={{color: "#000"}}/>}
+            
           </div>
         </Toolbar>
       </AppBar>

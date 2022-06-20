@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SideNavBar from "./components/Navbar";
 import Home from "./components/pages/home";
 import Explore from "./components/pages/explore";
+import Notification from "./components/pages/Notification";
 import BottomNavbar from "./components/BottomNavbar";
 
 function Rout() {
@@ -41,6 +42,7 @@ function Rout() {
         <Routes>
           <Route path="/" element={<Home MobileHeight={MobileHeight} />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/notifications" element={<Notification />} />
         </Routes>
         {!isMobile ? <BottomNavbar /> : null}
       </BrowserRouter>

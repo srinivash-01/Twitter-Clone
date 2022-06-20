@@ -9,6 +9,7 @@ import ProfileTweet from "../images/profileTweet.jpg";
 import Retweet from "../images/retweet.png";
 import Avatar from "@mui/material/Avatar";
 import TweetsTemplate from "./tweets";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
@@ -26,11 +27,11 @@ import "../styles/Home.css";
 import Tweets from "../Datas/data";
 import Profile from "../images/profile.jpg";
 import Trending from "../Datas/Trending";
+import NotificationTab from "./NotificationsTab";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Tofollow from "../Datas/Tofollwo";
 import ButtonAppBar from "../Appbar";
 import Box from "@mui/material/Box";
-
 import { styled } from "@mui/material/styles";
 const StyledBox = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "light" ? "#fff" : "grey[800]"
@@ -126,31 +127,18 @@ export default function Home(props) {
                   paddingTop: "16.5%"
                 }}
               >
-                Home
+                Notifications
               </h3>
             </div>
             <div
               style={{ padding: "1%", margin: !isMobile ? "2%" : "1%" }}
               className="topTweets"
             >
-              <img
-                src={Star}
-                style={{
-                  height: "32px",
-                  width: "30px",
-                  borderRadius: "50px",
-                  marginTop: "0px"
-                }}
-                alt="profile"
-                className="iconNavbar "
-                onClick={() => {
-                  settoggleDrawer(true);
-                }}
-              />
+              <SettingsOutlinedIcon />
             </div>
           </div>
         ) : (
-          <ButtonAppBar name = "Home"/>
+          <ButtonAppBar name = "Notifications"/>
         )}
         {isMobile && props.MobileHeight ? (
           <div
@@ -176,167 +164,7 @@ export default function Home(props) {
             </div>
           </div>
         ) : null}
-        {isMobile ? (
-          <div
-            style={{
-              marginTop: "4%",
-              display: "flex",
-              justifyContent: "space-between"
-            }}
-          >
-            <div
-              style={{
-                marginLeft: "14%"
-              }}
-            >
-              <InsertPhotoOutlinedIcon
-                style={{ padding: "1.5%", fontSize: "25px", color: "#0AA1DD" }}
-                className="tweetmedias"
-              />
-              <GifBoxOutlinedIcon
-                style={
-                  isDesktop
-                    ? {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "13px"
-                      }
-                    : {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "4px"
-                      }
-                }
-                className="tweetmedias"
-              />
-              <PollOutlinedIcon
-                style={
-                  isDesktop
-                    ? {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "13px"
-                      }
-                    : {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "4px"
-                      }
-                }
-                className="tweetmedias"
-              />
-              <SentimentSatisfiedAltOutlinedIcon
-                style={
-                  isDesktop
-                    ? {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "13px"
-                      }
-                    : {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "4px"
-                      }
-                }
-                className="tweetmedias"
-              />
-              <CalendarMonthOutlinedIcon
-                style={
-                  isDesktop
-                    ? {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "13px"
-                      }
-                    : {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "4px"
-                      }
-                }
-                className="tweetmedias"
-              />
-              <LocationOnOutlinedIcon
-                style={
-                  isDesktop
-                    ? {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "13px"
-                      }
-                    : {
-                        padding: "1.5%",
-                        fontSize: "25px",
-                        color: "#0AA1DD",
-                        marginLeft: "4px"
-                      }
-                }
-                className="tweetmedias"
-              />
-            </div>
-            <div>
-              <button
-                type="button"
-                class="tweetbutton"
-                style={{ marginRight: "40px" }}
-              >
-                Tweet
-              </button>
-            </div>
-          </div>
-        ) : null}
-        {!isMobile ? (
-          <SwipeableDrawer
-            anchor="bottom"
-            open={toggleDrawer}
-            onClose={() => settoggleDrawer(false)}
-            onOpen={() => settoggleDrawer(true)}
-            disableSwipeToOpen={false}
-            ModalProps={{
-              keepMounted: true
-            }}
-          >
-            <StyledBox
-              sx={{
-                position: "absolute",
-                top: "3px",
-                borderTopLeftRadius: 8,
-                borderTopRightRadius: 8,
-                visibility: "visible",
-                right: 0,
-                left: 0
-              }}
-            >
-              <Puller />
-              <Typography sx={{ p: 2, color: "text.secondary" }}>
-                51 results
-              </Typography>
-            </StyledBox>
-            <StyledBox
-              sx={{
-                px: 2,
-                pb: 2,
-                paddingTop: "65px",
-                height: "301px",
-                overflow: "auto"
-              }}
-            >
-              <Skeleton variant="rectangular" height="100%" />
-            </StyledBox>
-          </SwipeableDrawer>
-        ) : null}
-        {isMobile ? <hr style={{ opacity: "0.1" }} /> : null}
-        <TweetsTemplate />
+        <NotificationTab />
       </div>
       {isTab ? (
         <div style={{ width: "40%", overflowY: "scroll" }}>
