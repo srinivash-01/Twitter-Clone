@@ -1,31 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.c42e118b.css",
-    "main.js": "/static/js/main.1e26d8ed.js",
+    "main.css": "/static/css/main.8adf7da6.css",
+    "main.js": "/static/js/main.f1efbdc0.js",
     "static/media/profileTweet.jpg": "/static/media/profileTweet.e784c52ab7a62884255e.jpg",
     "static/media/Elon.jpg": "/static/media/Elon.e3f0438eb4b095c5d026.jpg",
     "static/media/hashtag.png": "/static/media/hashtag.78ccb5ccdec79c40840e.png",
     "static/media/profile.jpg": "/static/media/profile.489bdc1e8a1f52c0db3c.jpg",
     "static/media/trending1.png": "/static/media/trending1.e11b57d166e95a33298d.png",
+    "static/media/start.png": "/static/media/start.df6e85a2384ee1ba36c4.png",
     "static/media/KuCoinDiscription.jpg": "/static/media/KuCoinDiscription.24cdde3b0395f95ba12d.jpg",
     "static/media/RipLegend.jpeg": "/static/media/RipLegend.fd7bcb48a3a7ac5e8459.jpeg",
     "static/media/covid19.jpeg": "/static/media/covid19.86665fc3a3cfd80ad2c4.jpeg",
     "static/media/covid.jpeg": "/static/media/covid.1f98468c2959211c5f38.jpeg",
+    "static/media/noti4.jpg": "/static/media/noti4.d125a04a00cf38ed0668.jpg",
     "static/media/AlienWorlds.jpg": "/static/media/AlienWorlds.49552ee9b21896c1a255.jpg",
     "static/media/Cibi.jpg": "/static/media/Cibi.b07e5a4c21daacfa9805.jpg",
     "static/media/news1.jpg": "/static/media/news1.751852f9ad4af58e02e5.jpg",
+    "static/media/noti2.jpg": "/static/media/noti2.11ff6df1de03c90820df.jpg",
     "static/media/KuCoin.jpg": "/static/media/KuCoin.523ba0dbac9a6b32259f.jpg",
     "static/media/more.png": "/static/media/more.480e7b964d6fec61edbc.png",
     "static/media/foryou.jpeg": "/static/media/foryou.dad63418cc5937ef34ca.jpeg",
     "static/media/star.png": "/static/media/star.9b68351364ccbf247488.png",
+    "static/media/noti1.jpg": "/static/media/noti1.af5c4f0c568b2e9b162c.jpg",
+    "static/media/noti5.jpg": "/static/media/noti5.8baa3f0e90135b5640a3.jpg",
     "static/media/tweet.png": "/static/media/tweet.fb69a8d7ee232cd27263.png",
     "static/media/trending2.jpg": "/static/media/trending2.52ce07ea160a18117b22.jpg",
+    "static/media/noti3.jpg": "/static/media/noti3.a9759e6adadf855c4a75.jpg",
     "index.html": "/index.html",
-    "main.c42e118b.css.map": "/static/css/main.c42e118b.css.map",
-    "main.1e26d8ed.js.map": "/static/js/main.1e26d8ed.js.map"
+    "main.8adf7da6.css.map": "/static/css/main.8adf7da6.css.map",
+    "main.f1efbdc0.js.map": "/static/js/main.f1efbdc0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c42e118b.css",
-    "static/js/main.1e26d8ed.js"
+    "static/css/main.8adf7da6.css",
+    "static/js/main.f1efbdc0.js"
   ]
 }
